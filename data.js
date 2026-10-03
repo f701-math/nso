@@ -390,7 +390,7 @@ const TABS = {
     },
     {
      "name": "Primal Evolution",
-     "desc": "Increase Max HP by 10% of Max CP. Recovers 6% CP every turn if CP is less than 50%.",
+     "desc": "(Passive) Increase Max HP by 10% of Max CP. Recovers 6% CP every turn if CP is less than 50%.",
      "damage": "0",
      "cp": "0",
      "cd": "0",
@@ -1444,7 +1444,7 @@ const TABS = {
     },
     {
      "name": "Wood Control Vitality",
-     "desc": "Recover 300 HP every turn. 20% chance to resist debuff.",
+     "desc": "(Passive) Recover 300 HP every turn. 20% chance to resist debuff.",
      "damage": "0",
      "cp": "0",
      "cd": "0",
@@ -1490,7 +1490,7 @@ const TABS = {
    ]
   },
   {
-   "name": "Rinner Sharingan",
+   "name": "Rinnegan Sharingan",
    "image": "images/rinner-sharingan.png",
    "thumb": "thumbs/rinner-sharingan.png",
    "desc": "A legendary eye technique possessing overwhelming visual power.",
@@ -2237,7 +2237,7 @@ const TABS = {
    "name": "Cataclysm",
    "image": "images/cataclysm.png",
    "thumb": "thumbs/cataclysm.png",
-   "desc": "A legendary bloodline ability that channels the chaotic energy of a dark red thunderstorm.",
+   "desc": "",
    "skills": [
     {
      "name": "Shimon",
@@ -3084,7 +3084,7 @@ const TABS = {
     },
     {
      "name": "Raijin Senbonzakura",
-     "desc": "Inflict Internal Injury on enemy for 5 turns and drains HP by 10%.",
+     "desc": "Inflict Internal Injury on enemy for 5 turns and drains 10% HP by.",
      "damage": "1200",
      "cp": "800",
      "cd": "16",
@@ -3418,5 +3418,814 @@ const TABS = {
    ]
   }
  ],
- "senjutsu": []
+ "senjutsu": [
+  {
+   "name": "Toad Sage Mode",
+   "image": "images/toad-sage-mode.png",
+   "thumb": "thumbs/toad-sage-mode.png",
+   "desc": "The sage mode come from the Toad Hill, learn it from the Old Huge Toad, toad senjutsu can make our body become stronger and damage become more",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Mountains Flavor",
+     "desc": "(Passive) Increase Max HP by 12% and All attack damage increase by 8%.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 5.62,
+     "y": 47.72
+    },
+    {
+     "name": "Toad Oil",
+     "desc": "Decrease target 75% Agility for 4 turns.",
+     "damage": "300",
+     "sp": "335",
+     "cd": "8",
+     "x": 26.85,
+     "y": 21.76
+    },
+    {
+     "name": "Toad Fire Curse",
+     "desc": "Burn target 8% of the maximum HP & CP, if target got 'Oil' debuff, damage increases to 16%. (Oil debuff will be removed if using this skill)",
+     "damage": "550",
+     "sp": "475",
+     "cd": "9",
+     "x": 27.38,
+     "y": 67.19
+    },
+    {
+     "name": "Shield of Toad",
+     "desc": "Create a shield to offset 800 damage, the effect will cancel until the damage quota used up.",
+     "damage": "0",
+     "sp": "550",
+     "cd": "12",
+     "x": 48.4,
+     "y": 11.77
+    },
+    {
+     "name": "Ishikawa Goemon",
+     "desc": "Randomly use a skill from the target and put it in cooldown for 4 turns (PvP Jutsu) (Not applicable on Talent skill and Senjutsu)",
+     "damage": "100",
+     "sp": "800",
+     "cd": "20",
+     "x": 48.4,
+     "y": 35.27
+    },
+    {
+     "name": "Toad Spirit",
+     "desc": "(Passive) When player's HP is below 25%, increase 25% of critical rate and accuracy by 35%.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 48.4,
+     "y": 58.94
+    },
+    {
+     "name": "Special Pipe",
+     "desc": "60% of making target to skip the next action time for 1 turn.",
+     "damage": "625",
+     "sp": "730",
+     "cd": "15",
+     "x": 48.4,
+     "y": 82.27
+    },
+    {
+     "name": "Secret Sake of Toad",
+     "desc": "In the following 5 turns, all attack damage increased 50% of maximum SP.",
+     "damage": "0",
+     "sp": "735",
+     "cd": "20",
+     "x": 69.84,
+     "y": 23.34
+    },
+    {
+     "name": "Power of Toad",
+     "desc": "Deal bonus damage equal to 15% of the target's Max HP.",
+     "damage": "1075",
+     "sp": "790",
+     "cd": "20",
+     "x": 69.84,
+     "y": 69.64
+    },
+    {
+     "name": "Pneuma Toad Bomb",
+     "desc": "Drain 15% of all targets' maximum SP. (Targets' SP : Player's SP = 2:1) (PvP Jutsu)",
+     "damage": "1220",
+     "sp": "1025",
+     "cd": "22",
+     "x": 91.39,
+     "y": 51.23
+    }
+   ]
+  },
+  {
+   "name": "Snake Sage Mode",
+   "image": "images/snake-sage-mode.png",
+   "thumb": "thumbs/snake-sage-mode.png",
+   "desc": "The sage mode come from the Snake Cave, learn it from the Snake God, snake sage can make help for your skill using.",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Earth Flavor",
+     "desc": "(Passive) All skills use 24% less CP. Cooldown of skills decrease by 2 when the skill is first used.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 6.93,
+     "y": 32.6
+    },
+    {
+     "name": "Toxic Fangs",
+     "desc": "Petrify and poison target, then reduce 7% HP for 2 turns. (Petrified target cannot take any actions but will receive no damage, except damage over time)",
+     "damage": "0",
+     "sp": "380",
+     "cd": "17",
+     "x": 6.93,
+     "y": 74.64
+    },
+    {
+     "name": "Snake Swallow",
+     "desc": "Decrease the target's CP limit by 65% for 3 turns, if target got 'Toxic Tooth' debuff, the amount change to 80% for 3 turns (when the effect expired, the maximum limit of CP will return to normal)",
+     "damage": "490",
+     "sp": "530",
+     "cd": "15",
+     "x": 25.27,
+     "y": 53.27
+    },
+    {
+     "name": "Seven Snake Attack",
+     "desc": "This Senjutsu ignore target's 100% dodge rate.",
+     "damage": "740",
+     "sp": "680",
+     "cd": "13",
+     "x": 44.66,
+     "y": 32.6
+    },
+    {
+     "name": "Snake Mark",
+     "desc": "Target cannot use Talent and Senjutsu for 4 turns.",
+     "damage": "530",
+     "sp": "670",
+     "cd": "18",
+     "x": 44.66,
+     "y": 74.64
+    },
+    {
+     "name": "Special Snake Scales",
+     "desc": "Inflict 'Venom Spread' on user for 3 turns. (Reduce Target's 10% HP,CP,SP during target's attack)",
+     "damage": "0",
+     "sp": "635",
+     "cd": "18",
+     "x": 63.63,
+     "y": 16.7
+    },
+    {
+     "name": "Psychedelic Sound",
+     "desc": "Player teases target for 2 turns. While being teased, targets are forced to use weapon attack only. (PvP Jutsu)",
+     "damage": "480",
+     "sp": "825",
+     "cd": "20",
+     "x": 63.63,
+     "y": 53.27
+    },
+    {
+     "name": "Shedding",
+     "desc": "(Passive) When current SP reaches to 90% or above, player have 10% chance ignore all damage.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 63.63,
+     "y": 92.31
+    },
+    {
+     "name": "Snakes Shadow",
+     "desc": "Target will go into chaos for 1 times in first, third and fifth turn. (If target removes the debuff, only the first turn will be remove)",
+     "damage": "670",
+     "sp": "1160",
+     "cd": "21",
+     "x": 78.17,
+     "y": 53.27
+    },
+    {
+     "name": "Dragon Sublimation",
+     "desc": "Absorb target 15% HP and convert to SP (Target's HP : Player's SP = 2:1) (PvP Jutsu)",
+     "damage": "1080",
+     "sp": "875",
+     "cd": "20",
+     "x": 91.87,
+     "y": 53.27
+    }
+   ]
+  },
+  {
+   "name": "Slug Sage Mode",
+   "image": "images/slug-sage-mode.png",
+   "thumb": "thumbs/slug-sage-mode.png",
+   "desc": "Slug Sage Mode, imparted by the wise slugs of Shikkotsu Forest, is known for its unparalleled healing prowess and immense vitality.",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Slug Sage",
+     "desc": "Increase Max HP by 3000 & Recovers 2% HP every turn - cannot be dispersed (5 turns).",
+     "damage": "0",
+     "sp": "1000",
+     "cd": "20",
+     "x": 10.1,
+     "y": 48.23
+    },
+    {
+     "name": "Slug Protection",
+     "desc": "User takes 25% of the damage by CP and recovers 500 CP every turn - cannot be dispersed (5 turns).",
+     "damage": "0",
+     "sp": "400",
+     "cd": "12",
+     "x": 24.15,
+     "y": 48.23
+    },
+    {
+     "name": "Slug Explosion",
+     "desc": "Reduce 20% of the opponent's attack damage - cannot be purified (5 turns).",
+     "damage": "700",
+     "sp": "550",
+     "cd": "12",
+     "x": 43.5,
+     "y": 27.74
+    },
+    {
+     "name": "Earth Mastery",
+     "desc": "(Passive) Increase earth ninjutsu attack damage by 30% and reactive force chance by 30%.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 43.5,
+     "y": 48.23
+    },
+    {
+     "name": "Chakra Kick",
+     "desc": "Inflict 'CP Burn' effect on the opponent (Reduce opponent CP by 20% - 5 turns).",
+     "damage": "1000",
+     "sp": "500",
+     "cd": "14",
+     "x": 43.5,
+     "y": 71.82
+    },
+    {
+     "name": "Chakra Mega Punch",
+     "desc": "Inflict vulnerable effect on the target - target receives extra 50% damage - 2 turns (cannot be purified).",
+     "damage": "1200",
+     "sp": "800",
+     "cd": "14",
+     "x": 58.3,
+     "y": 27.92
+    },
+    {
+     "name": "Stoneheart Fortitude",
+     "desc": "(Passive) Increase Max HP and CP by 10%.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 58.51,
+     "y": 48.23
+    },
+    {
+     "name": "Slug Blessing",
+     "desc": "Heal the entire team (+ 2000 HP).",
+     "damage": "0",
+     "sp": "1000",
+     "cd": "20",
+     "x": 58.3,
+     "y": 71.82
+    },
+    {
+     "name": "Slug Absorption",
+     "desc": "Drain 15% HP from all targets (based on current HP).",
+     "damage": "900",
+     "sp": "800",
+     "cd": "25",
+     "x": 72.99,
+     "y": 48.23
+    },
+    {
+     "name": "Slug Breath",
+     "desc": "Inflict 'Reverse Healing' status on all targets - targets will lose HP instead of healing (3 turns). This jutsu cannot be purified.",
+     "damage": "1200",
+     "sp": "1000",
+     "cd": "50",
+     "x": 86.95,
+     "y": 48.23
+    }
+   ]
+  },
+  {
+   "name": "Monkey Sage Mode",
+   "image": "images/monkey-sage-mode.png",
+   "thumb": "thumbs/monkey-sage-mode.png",
+   "desc": "Monkey Sage Mode, learned from the Monkey Elder of the mountain peaks, balances body and chakra for relentless strength in battle.",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Monkey Sage",
+     "desc": "Increase Max HP by 2000 and Max CP by 2000. Reduce damage taken by 10% and recover 200 HP & CP every turn (10 turns - cannot be dispersed).",
+     "damage": "0",
+     "sp": "700",
+     "cd": "20",
+     "x": 10.07,
+     "y": 48.41
+    },
+    {
+     "name": "Collaborative Kicks",
+     "desc": "Inflict blind (reduce the opponent's accuracy by 40%; 3 turns - cannot be purified).",
+     "damage": "800",
+     "sp": "600",
+     "cd": "14",
+     "x": 24.1,
+     "y": 48.41
+    },
+    {
+     "name": "Monkey Cage",
+     "desc": "Mirror 100% of the incoming attack damage back to the opponent (3 turns - cannot be dispersed).",
+     "damage": "0",
+     "sp": "800",
+     "cd": "14",
+     "x": 43.41,
+     "y": 27.92
+    },
+    {
+     "name": "Monkey Shadow Assault",
+     "desc": "Stun the target (2 turns).",
+     "damage": "1200",
+     "sp": "1000",
+     "cd": "14",
+     "x": 43.41,
+     "y": 48.41
+    },
+    {
+     "name": "Spirit Destruction",
+     "desc": "Drain 20% of the opponent's current HP & CP.",
+     "damage": "1300",
+     "sp": "1200",
+     "cd": "14",
+     "x": 43.41,
+     "y": 72.0
+    },
+    {
+     "name": "Elemental Mastery",
+     "desc": "(Passive) Increase all attack damage by 20%.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 58.18,
+     "y": 28.09
+    },
+    {
+     "name": "Balance Control",
+     "desc": "(Passive) Increase Max HP & CP by 1000.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 58.39,
+     "y": 48.41
+    },
+    {
+     "name": "Primal Drop",
+     "desc": "Restrict the target (2 turns).",
+     "damage": "1400",
+     "sp": "800",
+     "cd": "10",
+     "x": 58.18,
+     "y": 72.0
+    },
+    {
+     "name": "Thousand-Cut Ritual",
+     "desc": "Ultra accurate. Reduce the target's dodge chance by 50% (3 turns).",
+     "damage": "1000",
+     "sp": "1400",
+     "cd": "14",
+     "x": 72.84,
+     "y": 48.41
+    },
+    {
+     "name": "Beast Blade Dance",
+     "desc": "Remove all positive buffs from the target and put ONE random jutsu on cooldown (+50 turns).",
+     "damage": "1300",
+     "sp": "1800",
+     "cd": "25",
+     "x": 86.76,
+     "y": 48.41
+    }
+   ]
+  },
+  {
+   "name": "Shark Sage Mode",
+   "image": "images/shark-sage-mode.png",
+   "thumb": "thumbs/shark-sage-mode.png",
+   "desc": "Shark Sage Mode, taught by the great sharks of the open sea, turns the tide of battle with the ferocity of the deep.",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Shark Sage",
+     "desc": "Increase Max CP by 5000 and recover 5% CP every turn (10 turns - cannot be dispersed).",
+     "damage": "0",
+     "sp": "1000",
+     "cd": "20",
+     "x": 10.03,
+     "y": 47.88
+    },
+    {
+     "name": "Shark Prison",
+     "desc": "Drain 50% of the opponent's current CP and stun them (2 turns).",
+     "damage": "750",
+     "sp": "700",
+     "cd": "12",
+     "x": 24.0,
+     "y": 47.88
+    },
+    {
+     "name": "Shark Attack",
+     "desc": "Reduce the opponent's purify chance by 50% (5 turns - cannot be purified).",
+     "damage": "850",
+     "sp": "900",
+     "cd": "14",
+     "x": 43.22,
+     "y": 27.39
+    },
+    {
+     "name": "Water Mastery",
+     "desc": "(Passive) Increase water ninjutsu attack damage by 40% and purify chance by 10%.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 43.22,
+     "y": 47.88
+    },
+    {
+     "name": "Water Shield",
+     "desc": "Reduce incoming attack damage by 70% and take the rest from CP instead of HP (1 HP = 1 CP), and protect user with debuff resist (3 turns - cannot be dispersed).",
+     "damage": "0",
+     "sp": "500",
+     "cd": "12",
+     "x": 43.22,
+     "y": 71.47
+    },
+    {
+     "name": "Shark Assault",
+     "desc": "Ultra accurate. Attack the opponent and inflict chaos (2 turns).",
+     "damage": "1050",
+     "sp": "1100",
+     "cd": "12",
+     "x": 57.93,
+     "y": 27.56
+    },
+    {
+     "name": "Hydro Blessing",
+     "desc": "(Passive) Recover 2% HP every turn. Increase Max HP by 500.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 58.14,
+     "y": 47.88
+    },
+    {
+     "name": "Shark Fang Whirl",
+     "desc": "Restrict the opponent (3 turns).",
+     "damage": "800",
+     "sp": "400",
+     "cd": "10",
+     "x": 57.93,
+     "y": 71.47
+    },
+    {
+     "name": "Demon Shark Dance",
+     "desc": "Inflict Reverse Charging: charging drains the CP it would have restored (7 turns - cannot be purified).",
+     "damage": "1600",
+     "sp": "1300",
+     "cd": "14",
+     "x": 72.53,
+     "y": 47.88
+    },
+    {
+     "name": "Shark's Final Dance",
+     "desc": "Heal HP after using this jutsu (200% of the damage made).",
+     "damage": "1750",
+     "sp": "1800",
+     "cd": "50",
+     "x": 86.4,
+     "y": 47.88
+    }
+   ]
+  },
+  {
+   "name": "Nature Sage Mode",
+   "image": "images/nature-sage-mode.png",
+   "thumb": "thumbs/nature-sage-mode.png",
+   "desc": "Nature Sage Mode draws on the living wood of the ancient forest to shield allies and bind enemies.",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Nature Sage",
+     "desc": "Increase Max HP by 3000, recovers 250 HP & 100 SP every turn (cannot be dispersed - 10 turns).",
+     "damage": "0",
+     "sp": "700",
+     "cd": "20",
+     "x": 10.01,
+     "y": 48.23
+    },
+    {
+     "name": "Golem Strike",
+     "desc": "Reduce the opponent's dodge chance and agility by 40% (cannot be purified - 3 turns).",
+     "damage": "800",
+     "sp": "600",
+     "cd": "12",
+     "x": 23.95,
+     "y": 48.23
+    },
+    {
+     "name": "Wooden Buddha",
+     "desc": "Resist any negative status and recover 500 HP & CP every turn (3 turns).",
+     "damage": "0",
+     "sp": "400",
+     "cd": "14",
+     "x": 43.13,
+     "y": 27.74
+    },
+    {
+     "name": "Wooden Dragon",
+     "desc": "Instantly reduce opponent's HP by 15% of their max HP.",
+     "damage": "900",
+     "sp": "800",
+     "cd": "8",
+     "x": 43.13,
+     "y": 48.23
+    },
+    {
+     "name": "Wooden Piercing Explosion",
+     "desc": "Has 100% chance to remove all positive buffs from the opponent.",
+     "damage": "800",
+     "sp": "800",
+     "cd": "9",
+     "x": 43.13,
+     "y": 71.82
+    },
+    {
+     "name": "Nature Power",
+     "desc": "(Passive) Increase Wood Control & Enraged Forest talent damage by 20%. Recover 6% HP & CP after using a Wood Control / Enraged Forest talent.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 57.81,
+     "y": 27.92
+    },
+    {
+     "name": "Natural Healing",
+     "desc": "(Passive) Recover 200 HP every turn. Increase Max HP by 1500.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 58.02,
+     "y": 48.23
+    },
+    {
+     "name": "Blooming Sanctuary",
+     "desc": "Protect the team with Debuff Resist and recover 600 HP & SP every turn (3 turns).",
+     "damage": "0",
+     "sp": "900",
+     "cd": "14",
+     "x": 57.81,
+     "y": 71.82
+    },
+    {
+     "name": "Rootquake Strike",
+     "desc": "Block the target from healing (Internal Injury - 6 turns; cannot be dispersed or purified).",
+     "damage": "1300",
+     "sp": "1000",
+     "cd": "12",
+     "x": 72.38,
+     "y": 48.23
+    },
+    {
+     "name": "Thousand Palm Devastation",
+     "desc": "Attack all targets and increase a random jutsu cooldown by 3 turns.",
+     "damage": "3000",
+     "sp": "1800",
+     "cd": "50",
+     "x": 86.22,
+     "y": 48.23
+    }
+   ]
+  },
+  {
+   "name": "Kyubi Sage Mode",
+   "image": "images/kyubi-sage-mode.png",
+   "thumb": "thumbs/kyubi-sage-mode.png",
+   "desc": "Kyubi Sage Mode channels the chakra of the Nine-Tailed Fox, burning with overwhelming power.",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Kyubi Mode",
+     "desc": "Increase Max HP by 1000, instantly heal 1000 HP and recover 500 HP every turn (10 turns - cannot be dispersed).",
+     "damage": "0",
+     "sp": "350",
+     "cd": "20",
+     "x": 10.13,
+     "y": 48.23
+    },
+    {
+     "name": "Divine Hands",
+     "desc": "Resist any negative status, reduce damage taken by 100% and increase attack damage by 450 (4 turns).",
+     "damage": "0",
+     "sp": "350",
+     "cd": "14",
+     "x": 24.08,
+     "y": 48.23
+    },
+    {
+     "name": "Divine Explosion",
+     "desc": "Inflict chaos on the opponent (2 turns) and instantly reduce the opponent's HP by 10% of their max HP.",
+     "damage": "800",
+     "sp": "650",
+     "cd": "12",
+     "x": 43.28,
+     "y": 27.74
+    },
+    {
+     "name": "Taijutsu Mastery",
+     "desc": "(Passive) Increase taijutsu attack damage by 10% and recover HP after dealing damage (15% of the damage made).",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 43.28,
+     "y": 48.23
+    },
+    {
+     "name": "Kyubi Rasengan",
+     "desc": "Inflict bleeding on the target: it receives 75% extra damage (3 turns).",
+     "damage": "1000",
+     "sp": "500",
+     "cd": "14",
+     "x": 43.28,
+     "y": 71.82
+    },
+    {
+     "name": "Multi Rasengan",
+     "desc": "100% chance to remove all positive buffs from the target.",
+     "damage": "900",
+     "sp": "800",
+     "cd": "14",
+     "x": 57.97,
+     "y": 27.92
+    },
+    {
+     "name": "Tailed Sage Chakra",
+     "desc": "(Passive) Recover 100 HP & CP every turn. Increase Max HP by 750.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 58.18,
+     "y": 48.23
+    },
+    {
+     "name": "Biju Chakra Armor",
+     "desc": "Instantly purify self and reduce incoming attack damage by 100% (2 turns - cannot be dispersed).",
+     "damage": "0",
+     "sp": "700",
+     "cd": "14",
+     "x": 57.97,
+     "y": 71.82
+    },
+    {
+     "name": "Rasengan: Silent Flash",
+     "desc": "Ultra accurate. Reduce the opponent's dodge & accuracy by 60% (3 turns).",
+     "damage": "800",
+     "sp": "800",
+     "cd": "14",
+     "x": 72.56,
+     "y": 48.23
+    },
+    {
+     "name": "Divine Beast Slash",
+     "desc": "Remove all positive buffs from the target and inflict burn: lose 10% of max HP every turn (10 turns).",
+     "damage": "1000",
+     "sp": "1800",
+     "cd": "50",
+     "x": 86.41,
+     "y": 48.23
+    }
+   ]
+  },
+  {
+   "name": "Burning Heart Sage Mode",
+   "image": "images/burning-heart-sage-mode.png",
+   "thumb": "thumbs/burning-heart-sage-mode.png",
+   "desc": "Burning Heart Sage Mode turns an unbreakable fighting spirit into living flame that burns hotter the longer the battle rages.",
+   "req": "Level 80, Pass Ninja Tutor Exam",
+   "wide": true,
+   "hot": 9.8,
+   "skills": [
+    {
+     "name": "Blazing Fire",
+     "desc": "Increase Max HP by 3000. Recovers HP after dealing damage (80% of the damage dealt; 10 turns).",
+     "damage": "0",
+     "sp": "350",
+     "cd": "20",
+     "x": 10.21,
+     "y": 48.23
+    },
+    {
+     "name": "Rising Scorching Sun",
+     "desc": "Reduce the target's attack damage by 100% in the next turn (cannot be purified). This skill can be used frequently.",
+     "damage": "1000",
+     "sp": "350",
+     "cd": "6",
+     "x": 24.44,
+     "y": 48.23
+    },
+    {
+     "name": "Blazing Destruction",
+     "desc": "Inflict reverse healing on the opponent (target loses HP instead of healing; 3 turns). Disperse the target.",
+     "damage": "1000",
+     "sp": "800",
+     "cd": "12",
+     "x": 44.01,
+     "y": 27.74
+    },
+    {
+     "name": "Blazing Universe",
+     "desc": "Gain an additional 85% accuracy to strike the target and inflict chaos (2 turns).",
+     "damage": "900",
+     "sp": "700",
+     "cd": "10",
+     "x": 44.01,
+     "y": 48.23
+    },
+    {
+     "name": "Unknowing Fire",
+     "desc": "Inflict burn on the opponent (reduce 600 HP & CP every turn - cannot be purified; 5 turns).",
+     "damage": "1300",
+     "sp": "1000",
+     "cd": "14",
+     "x": 44.01,
+     "y": 71.82
+    },
+    {
+     "name": "Fire Mastery",
+     "desc": "(Passive) Increase all attack damage by 20%. After using a jutsu, recover HP equal to 30% of its CP cost.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 58.98,
+     "y": 27.92
+    },
+    {
+     "name": "Fusion of Might",
+     "desc": "(Passive) Increase Max HP by 500. Add 500 damage to every attack. Reduce all damage taken by 300.",
+     "damage": "0",
+     "sp": "0",
+     "cd": "0",
+     "x": 59.2,
+     "y": 48.23
+    },
+    {
+     "name": "Engoku Sodan",
+     "desc": "Instantly reduce 15% of the target's max HP.",
+     "damage": "700",
+     "sp": "200",
+     "cd": "10",
+     "x": 58.98,
+     "y": 71.82
+    },
+    {
+     "name": "Enko Senshu",
+     "desc": "Instantly reduce 1000 HP & CP from the target.",
+     "damage": "750",
+     "sp": "500",
+     "cd": "12",
+     "x": 73.85,
+     "y": 48.23
+    },
+    {
+     "name": "Divine Flame Roaring Slash",
+     "desc": "Disperse the target and stun it (3 turns). Instantly reduce 20% of the target's current HP & CP.",
+     "damage": "1200",
+     "sp": "1800",
+     "cd": "20",
+     "x": 87.97,
+     "y": 48.23
+    }
+   ]
+  }
+ ]
 };
